@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        /* .services {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            box-shadow: inset 2 2 10px rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+        }
+        .services h2 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        .services ul {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .services img {
+            float: left;
+            margin-right: 10px;
+        }
+        .services button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color:black;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        } */
+        .mcse {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .services {
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .services h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .services ul {
+            list-style-type: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+        .services li {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .services button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color:black;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        } 
+        .services img {
+            float: left;
+            margin-right: 10px;
+        }
+        @media (min-width:320px) and (max-width: 480px) {
+            .mcse {
+                flex-direction: column;
+            }
+            .services {
+                margin: 10px;
+                padding: 10px;
+            }
+            .services h2 {
+                font-size: 30px;
+            }
+            .services button{
+                width: 100%;
+                height: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="con">
+        <h1>AJPortfolio</h1>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <a href="serivices.html">services</a>
+    </div>
+    <div class="mcse">
+    <div class="services">
+        <h2>Services I Provide</h2>
+        <ul>
+            <li>
+                <img src="pic4.jpg" id="webp" alt="Website Development" style="width:60px;height:60px;">
+                <strong>Website Developer:</strong> <br> I design and build responsive, user-friendly websites tailored to your business needs.
+                <br>
+                <a href="contact.html"><button>Contact for Website Development</button></a>
+            </li>
+            <li>
+                <img src="pic5.jpeg" id="cyberp" alt="Cyber Security" style="width:60px;height:60px;">
+                <strong>Cyber Security Analyst:</strong><br> I assess, secure, and monitor your digital assets to protect against cyber threats.
+                <br>
+                <a href="contact.html"><button>Contact for Cyber Security</button></a>
+            </li>
+            <li>
+                <img src="pic6.jpg" id="hardp" alt="Hardware Engineering" style="width:60px;height:60px;">
+                <strong>Hardware Engineer:</strong> <br> I offer hardware troubleshooting, repair, and custom PC building services.
+                <br>
+                <a href="contact.html"><button>Contact for Hardware Services</button></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <script src="action.js"></script>
+    <script>
+        // JavaScript code to handle button clicks or any other functionality
+        document.querySelectorAll('.services button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for your interest!, Fill this form I will get back to you soon.');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .mccon {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+            flex-wrap: wrap;
+        }
+        .contact{
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .contact h1 {
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .contact form{
+             font-size: 20px;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .contact input, .contact select, .contact textarea {
+            width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            border: 2px solid black;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .contact textarea {
+            height: 100px;
+        }
+         .contact button{
+            width: 250px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        } 
+        .socialc {
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .socialc s1, .socialc s2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            flex-wrap: wrap;
+        }
+        .s1{
+            flex-basis: 49%;
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .s2 {
+            flex-basis:49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .socialc h3 {
+            margin-bottom: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .socialc i {
+            margin: 0 10px;
+            color: #000;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .socialc i:hover {
+            color: #007bff;
+            transition: 0.3s;   
+        }
+       @media (min-width:320px) and (max-width: 480px){
+            .mccon {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact, .socialc {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .contact input, .contact select, .contact textarea, .contact button {
+                width: 90%;
+            }
+            form{
+                padding: 10px;
+            }
+            .s1{
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="con">
+        <h1>AJPortfolio</h1>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <a href="serivices.html">services</a>
+    </div>
+    <div class="mccon">
+        <div class="socialc">
+            <div class="s1">
+            <h3>Contact me at: </h3> <br>
+            <span><i class="fa-solid fa-envelope"></i><span><strong>akshat799110@gmail.com</strong></span><br>
+            <i class="fa-solid fa-phone"></i><span><strong>+91 7589632148</strong></span></span>
+        </div>
+        <div class="s2">
+            <h3>Follow me on: </h3> <br>
+           <span><i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i></span>
+        </div>
+        </div>
+    <div class="contact">
+       <h1>Contact Me</h1>
+        <form action="">
+            <input id="txt" type="text" placeholder="Name" required> <br><br>
+            <input id="email" type="email" placeholder="Email" required><br><br>
+            <input id="phone" type="tel" placeholder="Phone" required><br><br>
+            <select id="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="web-development">Web Development</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="seo">SEO</option>
+                <option value="consulting">Consulting</option>
+                <option value="cyber-security">Cyber Security</option>
+                <option value="hardware-engineering">Hardware Engineering</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="action.js"></script>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert('Form submitted successfully!');
+            form.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>
